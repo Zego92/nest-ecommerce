@@ -1,0 +1,22 @@
+{
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "ecommerce",
+  "entities": [
+    "**/*.entity{.ts,.js}"
+  ],
+  "entityPrefix": "entity",
+  "autoLoadEntities": true,
+  "migrationsTableName": "migration",
+  "migrations": [
+    "src/migration/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/migration",
+    "entitiesDir": "src/entity"
+  },
+  "ssl": false
+}
